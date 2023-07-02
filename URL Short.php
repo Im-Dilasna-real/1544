@@ -1,6 +1,6 @@
 <?php
 $token = '5234471382:AAEOlIlQ8y5oKoNM4QywjO4lBrrSW8pI31E';
-$img = 'https://www.shutterstock.com/image-vector/scissor-cut-address-bar-link-make-2256700879';
+$img = 'https://telegra.ph/test-my-07-02';
 
 $input = file_get_contents('php://input');
 $update = json_decode($input);
@@ -14,11 +14,11 @@ $msgid = $update->message->message_id;
 $inlinebutton = [
     'inline_keyboard' => [
         [
-            ['text' => "\xF0\x9F\x99\x8B Support Group", 'url' => 'https://t.me/G99SolutionsDiscussion'],
-            ['text' => "\xF0\x9F\x94\x94 Update Channel", 'url' => 'https://t.me/G99Solutions']
+            ['text' => "\xF0\x9F\x99\x8B Support Group", 'url' => 'https://t.me/SlNinjaTeam'],
+            ['text' => "\xF0\x9F\x94\x94 Update Channel", 'url' => 'https://t.me/sntTeambots']
         ],
         [
-            ['text' => '➕ Add me to Your Group', 'url' => 'https://t.me/LinkShortenRobot?startgroup=new']
+            ['text' => '➕ Add me to Your Group', 'url' => 'https://t.me/sntlinkshortbot?startgroup=new']
         ],
     ]
 ];
