@@ -1,6 +1,6 @@
 <?php
-$token = 'BOT_TOKEN';
-$img = 'BOT_IMG';
+$token = '5234471382:AAEOlIlQ8y5oKoNM4QywjO4lBrrSW8pI31E';
+$img = 'https://www.shutterstock.com/image-vector/scissor-cut-address-bar-link-make-2256700879';
 
 $input = file_get_contents('php://input');
 $update = json_decode($input);
