@@ -28,7 +28,7 @@ $keyboard = json_encode($inlinebutton, true);
 $urllong = filter_var($send, FILTER_VALIDATE_URL);
 
 if (strpos($send, "$urllong") === 0) {
-$urlshort = file_get_contents("https://api.g99solutions.com/linkshort?url=$urllong");
+$urlshort = file_get_contents("https://api.sdbots.tech?url=$urllong");
 $urldecode = json_decode($urlshort);
 $surl = $urldecode->shorturl;
 $urltext = urlencode("<b>\xF0\x9F\x94\x97 Link Shorten Bot \xF0\x9F\x94\x97\nLink - $surl\n~ @LinkShortenRobot</b>");
